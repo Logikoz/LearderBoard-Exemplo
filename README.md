@@ -1,4 +1,4 @@
 # LearderBoard-Exemplo
 
-![image](https://user-images.githubusercontent.com/37851168/66709437-b5242e00-ed29-11e9-93c2-e56ffac3b2ec.png)
-![image](https://user-images.githubusercontent.com/37851168/66709444-d422c000-ed29-11e9-8af3-353a411d5c34.png)
+![image](https://user-images.githubusercontent.com/37851168/66709454-0b916c80-ed2a-11e9-859c-b53ca9c45c3b.png)
+![image](https://user-images.githubusercontent.com/37851168/66709455-10eeb700-ed2a-11e9-8fc9-c936f5e412e3.png)
