@@ -94,7 +94,6 @@ namespace LearderBoard
             if (e.LeftButton == System.Windows.Input.MouseButtonState.Pressed)
                 DragMove();
         }
-
         //fecharndo janela
         private void Button_Click_3(object sender, RoutedEventArgs e) => Close();
     }
