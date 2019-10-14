@@ -13,13 +13,11 @@ namespace LearderBoard
     {
         private List<UsuariosModel> usuarios;
         public MainWindow() => Iniciar();
-
         private void Iniciar()
         {
             InitializeComponent();
             DeserialzarDadosAsync();
         }
-
         private async void DeserialzarDadosAsync()
         {
             //preparando arquivo para deserializaçao.
@@ -29,7 +27,6 @@ namespace LearderBoard
             //colocando os dados dos usuarios em ordem crecente da reputaçao.
             usuarios = usuarios.OrderByDescending(a => a.Reputacao).ToList();
         }
-
         private void MostrarDados(ushort tamanhoLista)
         {
             //verificando se o tamanho a ser mostrado é maior que a quantidade de usuarios disponiveis.
@@ -42,7 +39,6 @@ namespace LearderBoard
             for (int i = 0; i < tamanhoLista; i++)
                 _ = ListaUsuarios_sp.Children.Add(NovaLinha(usuarios[i]));
         }
-
         private StackPanel NovaLinha(UsuariosModel user)
         {
             //pegando a posicao do usuario na lista.
@@ -51,7 +47,7 @@ namespace LearderBoard
             //Adicionando a posicao do usuario.
             _ = linha.Children.Add(new TextBlock
             {
-                Text = posicaoUsuario.ToString(),
+                Text = (posicaoUsuario + 1).ToString(),
                 ToolTip = user.UsuarioID,
                 HorizontalAlignment = HorizontalAlignment.Center,
                 Margin = new Thickness(3),
@@ -94,7 +90,6 @@ namespace LearderBoard
             if (e.LeftButton == System.Windows.Input.MouseButtonState.Pressed)
                 DragMove();
         }
-
         //fecharndo janela
         private void Button_Click_3(object sender, RoutedEventArgs e) => Close();
     }

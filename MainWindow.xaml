@@ -8,6 +8,7 @@
     Title="MainWindow"
     Width="300"
     Height="450"
+    Background="Wheat"
     MouseDown="Window_MouseDown"
     ResizeMode="NoResize"
     WindowStartupLocation="CenterScreen"
